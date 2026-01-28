@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - jpegg.dev</title>
+  <meta name="description" content="Get in touch with jpegg.dev. Contact us about developer tools, API Dev Studio, or collaboration opportunities.">
+  <meta property="og:title" content="Contact - jpegg.dev">
+  <meta property="og:description" content="Get in touch with jpegg.dev. Contact us about developer tools, API Dev Studio, or collaboration opportunities.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jpegg.dev/contact.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white text-slate-900 antialiased min-h-dvh flex flex-col">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+    <nav class="mx-auto max-w-5xl px-6 py-4 flex items-center justify-between">
+      <a href="/" class="font-mono text-xl font-semibold text-slate-900 hover:text-blue-600 transition-colors">
+        {jpegg}
+      </a>
+
+      <!-- Desktop nav -->
+      <ul class="hidden md:flex items-center gap-8">
+        <li><a href="/" class="text-slate-600 hover:text-slate-900 transition-colors">Home</a></li>
+        <li><a href="/about.html" class="text-slate-600 hover:text-slate-900 transition-colors">About</a></li>
+        <li><a href="/products.html" class="text-slate-600 hover:text-slate-900 transition-colors">Products</a></li>
+        <li><a href="/contact.html" class="text-slate-900 font-medium">Contact</a></li>
+      </ul>
+
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900" aria-label="Open menu">
+        <svg class="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile nav -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white">
+      <ul class="px-6 py-4 space-y-4">
+        <li><a href="/" class="block text-slate-600 hover:text-slate-900">Home</a></li>
+        <li><a href="/about.html" class="block text-slate-600 hover:text-slate-900">About</a></li>
+        <li><a href="/products.html" class="block text-slate-600 hover:text-slate-900">Products</a></li>
+        <li><a href="/contact.html" class="block text-slate-900 font-medium">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    <!-- Hero -->
+    <section class="py-20 md:py-28">
+      <div class="mx-auto max-w-5xl px-6">
+        <h1 class="text-4xl md:text-5xl font-semibold text-slate-900">
+          Contact
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-slate-600 max-w-2xl text-pretty">
+          Get in touch.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="pb-20">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="max-w-md">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 size-12 rounded-lg bg-slate-100 flex items-center justify-center">
+              <svg class="size-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h2 class="font-semibold text-slate-900">Email</h2>
+              <p class="mt-1">
+                <a href="mailto:jpeggdev@gmail.com" class="text-blue-600 hover:text-blue-700 transition-colors">jpeggdev@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-50 border-t border-slate-200 mt-auto">
+    <div class="mx-auto max-w-5xl px-6 py-12">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+        <div>
+          <a href="/" class="font-mono text-lg font-semibold text-slate-900">{jpegg}</a>
+          <p class="mt-2 text-slate-600 text-sm">Building developer tools with 25+ years of experience.</p>
+        </div>
+
+        <ul class="flex flex-wrap gap-6 text-sm">
+          <li><a href="/" class="text-slate-600 hover:text-slate-900 transition-colors">Home</a></li>
+          <li><a href="/about.html" class="text-slate-600 hover:text-slate-900 transition-colors">About</a></li>
+          <li><a href="/products.html" class="text-slate-600 hover:text-slate-900 transition-colors">Products</a></li>
+          <li><a href="/contact.html" class="text-slate-600 hover:text-slate-900 transition-colors">Contact</a></li>
+          <li><a href="https://apidevstudio.com" target="_blank" rel="noopener" class="text-slate-600 hover:text-slate-900 transition-colors">API Dev Studio</a></li>
+        </ul>
+      </div>
+
+      <div class="mt-8 pt-8 border-t border-slate-200 text-sm text-slate-500">
+        &copy; 2026 jpegg.dev. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile menu script -->
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
